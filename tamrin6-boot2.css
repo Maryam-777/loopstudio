@@ -1,0 +1,202 @@
+
+/* CSS Document */
+/*nav*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Jost', sans-serif;
+}
+.nav-pic{
+	background-image: url(images/image-hero.jpg);
+	background-size: cover;
+	background-position: center top;
+	min-height: 700px;
+	max-height:800px;	
+}
+.nav-box{
+	font-size: 80px;
+	font-weight: 400;
+	border: 2px solid white;
+	line-height: 90px;
+	margin-top: 140px;
+}
+
+.nav-underline{
+	width: 0px;
+	height: 2px;
+	background-color: white;
+}
+
+nav li:hover div{
+	transition: all .3s linear;
+	width: 30px;
+	height: 2px;	
+}
+/*main*/
+.main-row1 p{
+	font-size: 40px;
+}
+/*row1*/
+.row1-img{
+	background-image: url(images/image-interactive.jpg);
+	background-size: cover;
+	height: 500px;
+}
+.row1{
+    bottom: 0px;
+	right: 0px;	
+}
+footer .row1 li{
+	margin-right:20px;
+}
+
+/*section2*/
+.main-marjin{
+	margin-bottom: 90px;
+	margin-top: 90px;
+}
+.item{
+	background-size:cover;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.item-gradiant{
+	background-image: linear-gradient(to top,rgba(38,38,38,0.84),rgba(38,38,38,0));
+	width: 100%;
+	height: 50%;
+	bottom: 0;
+	transition: all 0.5s ease;
+}
+
+.item:hover .item-gradiant{
+	    background-image: linear-gradient(to top,rgba(255,255,255,0.6),rgba(255,255,255,0.7));
+		height: 100%;
+		width: 100%;
+	    z-index: 9;
+}
+.item-text{
+	bottom: 0px;
+	left: 30px;
+	font-size: 40px;
+}
+.item:hover .item-text{
+	z-index: 10;
+	color: #111 !important;
+}
+@media screen and (max-width:768px){
+	.nav-pic{
+	background-image: url(mobile/image-hero.jpg);
+}
+	.item-text{
+		font-size: 30px;
+	}
+	.nav-box{
+		font-size: 5vh;
+		padding-left: 15px !important;
+		margin-top: 230px
+	}
+
+	.row1-img{
+	    background-image: url(mobile/image-interactive.jpg);
+		max-height: 350px;
+	}
+	.item-gradiant{
+	background-image: linear-gradient(to right,rgba(38,38,38,0.84),rgba(38,38,38,0));
+	width: 50%;
+	height: 100%;
+}
+
+.item:hover .item-gradiant{
+	    background-image: linear-gradient(to right,rgba(255,255,255,0.6),rgba(255,255,255,0.7));
+}
+}
+/*footer*/
+.footer1 .row1,.row2 li{
+	list-style: none;
+}
+.footer1 .row1 li div{
+	width: 0px;
+	height: 2px;
+	background-color: white;
+	margin-top: 3px;	
+}
+.footer1 .row1 li:hover div{
+	width: 100%;
+	transition: all .3s linear;
+}
+.footer1 .row2 li a{
+	text-decoration: none;
+	color: white;
+}
+footer .row2 li div{
+	width: 0px;
+	height: 2px;
+	background-color: white;
+}
+.row2 li:hover div{
+	transition: all .5s linear;
+	width: 30px;
+	height: 2px;	
+}
+
+/*navbar-collapse*/
+@media screen and (max-width:992px){
+	.navbar-collapse{
+	position:absolute;
+	z-index: 3;
+	background-color: white;
+	top: 92px;
+	right: 0px;
+	width: 200px;
+}
+	.navbar-toggler{
+		background-color: white;
+	}
+	.nav-item .nav-link{
+		color:gray!important;
+	}
+	.nav-underline{
+	display: none;
+}
+.row1{
+		position: relative !important;
+		top: 20px;
+}
+}
+
+/*sidenav*/
+/* CSS Document */
+
+.sidenav{
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 1; 
+		  top: 0; 
+		  left: 0;
+		  background-color: #111; 
+		  overflow-x: hidden; 
+		  padding-top: 60px; 
+		  transition: 0.5s; 
+	}	
+.sidenav a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+/*		  transition: 0.3s;*/
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
